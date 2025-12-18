@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Art Gallery</h1>
+    <p>Beautiful artworks collection</p>
+</header>
+
+<section class="gallery">
+    <div class="card">
+        <img src="artGallery1.jpg" alt="">
+        <p>Artwork One</p>
+    </div>
+
+    <div class="card">
+        <img src="artGallery2.jpg" alt="Artwork 2">
+        <p>Artwork Two</p>
+    </div>
+
+    <div class="card">
+        <img src="artGallery3.jpg" alt="Artwork 3">
+        <p>Artwork Three</p>
+    </div>
+</section>
+
+</body>
+</html>
